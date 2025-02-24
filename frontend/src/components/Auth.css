@@ -1,0 +1,133 @@
+/* Center the form */
+.auth-container {
+    display: flex;
+    width: 60%;
+    height: 500px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Full-page container */
+.auth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f5ffe6;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* AgriTech Brand Name */
+.brand-name {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c6e49;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Left: Form Box */
+.auth-form-box {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c6e49;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Submit button */
+.auth-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    background: #2c6e49;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-form button:hover {
+    background: #1f5234;
+}
+
+/* Separator */
+.separator {
+    width: 5%;
+    background: linear-gradient(180deg, #2c6e49, #74c69d);
+    animation: slideUp 2s infinite alternate;
+}
+
+/* Right: Image Box */
+.image-box {
+    flex: 1;
+}
+
+.image-box img {
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Switch Button */
+.switch-btn {
+    background: none;
+    border: none;
+    color: #2c6e49;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.switch-btn:hover {
+    color: #1f5234;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    .image-box {
+        display: none;
+    }
+}

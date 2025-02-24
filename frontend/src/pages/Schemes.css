@@ -1,0 +1,10 @@
+.schemes-container {
+    text-align: center;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .schemes-container h1 {
+    color: #354e59;
+  }
+  
